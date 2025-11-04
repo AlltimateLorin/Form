@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Roof & Exterior Estimate | Alltimate Roofing</title>
+  <meta name="description" content="Cleveland & Chattanooga TN — Free inspection & same-day estimates for roofing, siding, gutters, and windows.">
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --card:#121214;
+      --accent:#ffd500;
+      --text:#f6f7f8;
+      --muted:#a8a8ad;
+      --radius:18px;
+      --pad-lg:28px; --pad:20px; --pad-sm:12px;
+      --focus:0 0 0 3px rgba(255,213,0,.35);
+      --border:1px solid rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial}
+    .wrap{max-width:1120px;margin:auto;padding:var(--pad)}
+    header{text-align:center;margin-bottom:var(--pad)}
+    .logo-img{height:80px;max-width:100%;object-fit:contain;margin:auto;display:block}
+    main{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--pad-lg)}
+    @media(max-width:900px){main{grid-template-columns:1fr}}
+    .card{background:var(--card);border:var(--border);border-radius:var(--radius);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .hero{padding:var(--pad-lg)}
+    form{padding:var(--pad)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}}
+    .full{grid-column:1/-1}
+    label{display:block;font-weight:600;margin:4px 0 6px}
+    input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#0f0f11;color:var(--text)}
+    input:focus,select:focus,textarea:focus{outline:none;box-shadow:var(--focus);border-color:rgba(255,213,0,.55)}
+    .btn{background:var(--accent);color:#111;font-weight:800;padding:14px 16px;border:none;border-radius:14px;cursor:pointer}
+    .success,.error{display:none;margin-top:12px;padding:12px;border-radius:12px}
+    .success{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.35)}
+    .error{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.35)}
+    .aside{padding:var(--pad)}
+    .aside .tile{padding:var(--pad);border:var(--border);border-radius:14px;margin-bottom:var(--pad);background:linear-gradient(180deg,rgba(255,213,0,.06),transparent)}
+    .tile h3{margin:0 0 8px}
+    footer{margin:var(--pad) 0 var(--pad-lg);color:var(--muted);font-size:.9rem;text-align:center}
+    .hidden{display:none!important}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="logo-img" alt="Alltimate Roofing" src="data:image/png;base64,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y/jy5eaF6JmnEOJ4+LKlCnwpfNrP0OgvVvjttyt86dIijs4DNp1r6MRXF0J0biriN88o52+v6Id99MOxluNYc03W5iYiYP7UU+jdb1Jw7Cpfs86KMgqtt63brCXg02+kCMvH20IkNtbxvPkm4zNmYNt0q4G78xJJPDREOBpFSkYZPosgINYQi8Q0FC3mC18r4rfO8vGLLlL5xRf7+Kz/8+Mc+3g9hpmePg22zrxwdwVaWsYfp+tFb+h6cYuul24F63qQ8F9cn0xW375jx1lZPyLcm9Daek5fQw/+BeVtR7m3uY6ju0n1TvuZHQ6faN6xonUe1nkp3apppXWaVlaXSFTXaYkD8H1gna4NqDP0Qch7QF0y2b8umehfF4/vX6fpfUDPfXjSMCzS91jMoju9K0znL4NPi3QMhlFpktK98nVEqodkog84ADwQx41PrXPH66TpL0nlqjDLpqFMBfsyz0lpXcLOL47HPu5kEtsSlk1WXkFrfyi/Vl2XxGcytX+qpz7gwLpkdHBdtHVwXSyE71p/pFWk9uHyh/ZbstS8eHcFWlq+d0gyNuo70eiY06PRY6b0PMecHomcMGH79svKRBF6JVpaLq6ORseeGouNnup9HN3NMWdQ3bS3n5Z6l0csNnQElSGZHD3FMIjHTEkmx8GWSHnGmf9TurXN7bMwUj7bx876ctIqt9vvaGxz0juvF53+0uXrvB+bzuPu7PF657XKUbhfr7LbaaOnJOn8tp9yihGdCl8ThD+3vc0xpyfCx+6Rc4gSEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISezEY+3+15AjB3QPrdQAAAABJRU5ErkJggg==" />
+    </header>
+
+    <main>
+      <section class="card hero">
+        <h1 style="text-align:center;margin-bottom:20px;">Free Roof & Exterior Estimate</h1>
+        <form id="leadForm" method="POST" action="https://formspree.io/f/xeopljay" novalidate>
+          <div class="hidden"><label>Company<input name="company" type="text" /></label></div>
+          <div class="grid">
+            <div><label for="first">First name*</label><input id="first" name="first_name" required /></div>
+            <div><label for="last">Last name*</label><input id="last" name="last_name" required /></div>
+            <div><label for="phone">Phone*</label><input id="phone" name="phone" inputmode="tel" placeholder="(423) 555-1234" required /></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" /></div>
+            <div class="full"><label for="addr">Service Address</label><input id="addr" name="address" /></div>
+            <div><label for="city">City</label><input id="city" name="city" /></div>
+            <div><label for="zip">ZIP</label><input id="zip" name="zip" pattern="\d{5}" placeholder="#####" /></div>
+            <div><label for="service">Service</label><select id="service" name="service"><option value="">Select…</option><option>Roofing</option><option>Siding</option><option>Gutters</option><option>Windows</option></select></div>
+            <div><label for="contact">Preferred Contact</label><select id="contact" name="contact_preference"><option value="">Select…</option><option>Phone Call</option><option>Text Message</option><option>Email</option></select></div>
+            <div class="full"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" rows="4"></textarea></div>
+            <div class="full"><input id="consent" name="consent" type="checkbox" required /> <label for="consent">I agree to be contacted by Alltimate Roofing about my request.</label></div>
+            <div class="full"><button class="btn" id="submitBtn" type="submit">Request My Free Estimate</button></div>
+            <div id="success" class="success full">Thanks! We got your request. A team member will reach out shortly.</div>
+            <div id="error" class="error full">Something went wrong. Please try again.</div>
+          </div>
+        </form>
+      </section>
+
+      <aside class="card aside">
+        <div class="tile">
+          <h3>What you get</h3>
+          <ul>
+            <li>Full roof/attic inspection</li>
+            <li>Photos + written summary</li>
+            <li>Clear, line-item estimate</li>
+            <li>Options: repair vs. replace</li>
+          </ul>
+        </div>
+        <div class="tile">
+          <h3>Service Area</h3>
+          <p>Cleveland, Chattanooga, Ooltewah, Collegedale, East Brainerd, Hixson, Soddy-Daisy, and nearby.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Alltimate Roofing • Cleveland & Chattanooga, TN
+    </footer>
+  </div>
+
+  <script>
+    const THANK_YOU_URL = 'thank-you.html';
+    const SECONDARY_WEBHOOK_URL = ''; // Optional: add your Zapier/Make webhook here if you want SMS pings
+
+    const phone = document.getElementById('phone');
+    phone.addEventListener('input',()=>{let v=phone.value.replace(/\D/g,'').slice(0,10);const p=v.match(/(\d{0,3})(\d{0,3})(\d{0,4})/);phone.value=!p[2]?p[1]:'('+p[1]+') '+p[2]+(p[3]?'-'+p[3]:'');});
+
+    const form=document.getElementById('leadForm');const ok=document.getElementById('success');const err=document.getElementById('error');
+    function validate(){const req=['first','last','phone','consent'];for(const id of req){const el=document.getElementById(id);if(el.type==='checkbox'&&!el.checked)return false;if(!el.value)return false;}const email=document.getElementById('email').value;if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return false;const zip=document.getElementById('zip').value;if(zip&&!/^\d{5}$/.test(zip))return false;return true;}
+    form.addEventListener('submit',async e=>{e.preventDefault();if(!validate()){err.style.display='block';err.textContent='Please complete required fields.';return;}document.getElementById('submitBtn').disabled=true;try{
+        const data=new FormData(form);const payload={};data.forEach((v,k)=>payload[k]=v);payload._subject='New Lead: Alltimate Roofing';payload._replyto=payload.email||'';
+        const resp=await fetch(form.action,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify(payload)});if(!resp.ok)throw new Error('Network error');
+        if(SECONDARY_WEBHOOK_URL)await fetch(SECONDARY_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+        ok.style.display='block';form.reset();setTimeout(()=>{window.location.href=THANK_YOU_URL;},400);
+      }catch(_){
+        err.style.display='block';
+      } finally { document.getElementById('submitBtn').disabled=false; }
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
